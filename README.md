@@ -11,4 +11,4 @@ Image Slider in recycler view
 ![](https://media.giphy.com/media/US0mDVlCoZmuJ2L7XB/giphy.gif)
 
 ### Tutorial Link
-`<link>` : <https://techtibet.com/uncategorised/image-slider-in-recyclerview-android/>
+`<link>` : <https://techtibet.com/blog/android/image-slider-in-recyclerview-android/>
