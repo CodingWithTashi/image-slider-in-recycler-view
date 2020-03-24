@@ -1,6 +1,7 @@
 package com.tectibet.tutorilaapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +26,7 @@ public class SliderPagerAdapter extends PagerAdapter {
         this.image_arraylist = image_arraylist;
     }
     @Override
-    public Object instantiateItem(ViewGroup container, int position) {
+    public Object instantiateItem(ViewGroup container, final int position) {
 
         View view = LayoutInflater.from(context).inflate(R.layout.layout_slider, container, false);
         ImageView im_slider =view.findViewById(R.id.im_slider);
@@ -41,6 +42,9 @@ public class SliderPagerAdapter extends PagerAdapter {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, "image clicked", Toast.LENGTH_SHORT).show();
+                Intent intent =new Intent(context,ImageActicity.class);
+                intent.putExtra("url",image_arraylist.get(position));
+                context.startActivity(intent);
             }
         });
         return view;
