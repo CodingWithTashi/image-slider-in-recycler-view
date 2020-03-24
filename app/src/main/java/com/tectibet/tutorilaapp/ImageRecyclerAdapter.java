@@ -84,9 +84,6 @@ public class ImageRecyclerAdapter extends RecyclerView.Adapter<ImageRecyclerAdap
         private TextView[] dots;
         private LinearLayout ll_dots;
 
-
-
-
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             mViewPager = itemView.findViewById(R.id.vp_slider);

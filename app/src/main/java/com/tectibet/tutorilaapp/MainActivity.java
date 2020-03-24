@@ -27,8 +27,5 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
-
-
     }
-
 }
